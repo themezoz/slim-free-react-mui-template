@@ -124,9 +124,24 @@ function Footer() {
 						bgcolor: (theme) => theme.palette.secondary.main,
 					}}
 				/>
-				<Stack direction="row" justifyContent="space-between" alignItems="center">
+				<Stack direction={{ lg: 'row' }} justifyContent="space-between" alignItems="center" flexWrap="wrap">
 					<Typography variant="body1" textAlign="center">
 						Copyright 2023 © All Rights Reserved. Slim React MUI Template
+					</Typography>
+					<Typography variant="subtitle1" textAlign="center">
+						Distributed by{' '}
+						<Link
+							underline="hover"
+							sx={{
+								cursor: 'pointer',
+							}}
+							href="https://themewagon.com/"
+							target="_blank"
+							rel="noreferrer noopener"
+							fontWeight="medium"
+						>
+							ThemeWagon
+						</Link>{' '}
 					</Typography>
 					<Typography variant="subtitle1" textAlign="center">
 						💻 - Construido por{' '}

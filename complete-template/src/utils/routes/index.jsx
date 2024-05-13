@@ -46,7 +46,7 @@ const ThemeShadowPage = withLazyLoadably(lazy(() => import('@/pages/themePages/t
 
 function Router() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/slim-free-react-mui-template">
 			<ScrollToTopOnRouteChange>
 				<Routes>
 					<Route path="/" element={<MinimalLayout />}>

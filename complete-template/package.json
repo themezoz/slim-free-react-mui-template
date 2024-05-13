@@ -1,8 +1,8 @@
 {
-	"homepage": ".",
 	"name": "slim-mui-template",
 	"private": false,
 	"version": "1.0.0",
+	"homepage": "https://themewagon.github.io/slim-free-react-mui-template",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
@@ -13,7 +13,9 @@
 		"lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
 		"lint:fix": "eslint --fix --ext .js,.jsx .",
 		"format": "prettier --write .",
-		"installD": "npm install --no-audit --no-fund --no-optional"
+		"installD": "npm install --no-audit --no-fund --no-optional",
+		"predeploy": "npm run build && cp ./dist/index.html ./dist/404.html",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.10.6",
@@ -52,6 +54,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"gh-pages": "^6.1.1",
 		"vite": "^4.2.0",
 		"vite-plugin-eslint": "^1.8.1"
 	}
